@@ -5,9 +5,19 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const index = require('components/index.vue');
+const form = require('components/form.vue');
 
 const routes = [
-  { path: '/', component: index },
+    {
+        path: '/',
+        name: 'index',
+        component: index
+    },
+    {
+        path: '/form',
+        name: 'form',
+        component: form
+    },
 ]
 
 const router = new VueRouter({
