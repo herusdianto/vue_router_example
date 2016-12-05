@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 
 const index = require('components/index.vue');
 const form = require('components/form.vue');
+const user = require('components/user.vue');
 
 const routes = [
     {
@@ -17,6 +18,11 @@ const routes = [
         path: '/form',
         name: 'form',
         component: form
+    },
+    {
+        path: '/user/:id',
+        name: 'user',
+        component: user
     },
 ]
 
